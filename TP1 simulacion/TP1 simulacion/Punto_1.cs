@@ -13,9 +13,11 @@ namespace TP1_simulacion
 {
     public partial class Punto_1 : Form
     {
-        public Punto_1(Form Ventana)
+        public VentanaPrincipal ventana{get;set;}
+        public Punto_1(VentanaPrincipal ven)
         {
             InitializeComponent();
+            ventana = ven;
         }
 
         int modo;
@@ -65,6 +67,13 @@ namespace TP1_simulacion
             float rand = random(v.X, v.M);
 
             cargarEnTabla(icounter, rand);
+        }    
+
+        private void btonVolver_Click(object sender, EventArgs e)
+        {
+            ventana.Show();
+            this.Close();
+            
         }
 
 
@@ -158,11 +167,6 @@ namespace TP1_simulacion
 
         }
 
-        private void btonVolver_Click(object sender, EventArgs e)
-        {
-            VentanaPrincipal ventana = new VentanaPrincipal();
-            this.Close();
-            ventana.Show();
-        }
+
     }
 }

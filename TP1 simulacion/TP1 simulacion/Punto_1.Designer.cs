@@ -284,6 +284,7 @@ namespace TP1_simulacion
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnGenerar);
             this.Name = "Punto_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Punto_1";
             this.Load += new System.EventHandler(this.Punto_1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgTabla)).EndInit();

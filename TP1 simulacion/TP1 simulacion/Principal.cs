@@ -22,14 +22,23 @@ namespace TP1_simulacion
             this.Hide();
             Punto_1 Ventana1 = new Punto_1(this);
             Ventana1.Show();
+
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Punto2 Ventana2 = new Punto2();
+            Punto2 Ventana2 = new Punto2(this);
             Ventana2.Show();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Punto3 Ventana3 = new Punto3();
+            Ventana3.Show();
         }
     }
 }
